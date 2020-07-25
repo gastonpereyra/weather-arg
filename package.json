@@ -36,5 +36,8 @@
     "mocha": "^8.0.1",
     "nyc": "^15.1.0",
     "sinon": "^9.0.2"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
   }
 }

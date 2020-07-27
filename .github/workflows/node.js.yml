@@ -1,0 +1,28 @@
+name: Weather by Name
+
+on:
+  workflow_dispatch:
+    inputs:
+      city:
+        description: 'City'
+        default: 'Capital Federal'
+        required: true
+
+jobs:
+
+  says:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm ci
+    - name: Getting Weather By City Name
+      run: npm run weather-by-name -- ${{ github.event.inputs.city }}

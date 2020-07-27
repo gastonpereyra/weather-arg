@@ -13,7 +13,8 @@
     "test": "export TEST_ENV=true; mocha --exit --recursive tests/",
     "coverage": "nyc npm test",
     "test-ci": "nyc --reporter=lcov --reporter=text-summary mocha --exit --recursive tests/",
-    "lint": "eslint lib/ tests/"
+    "lint": "eslint lib/ tests/",
+    "weather-by-name": "node ./actions/by-name"
   },
   "repository": {
     "type": "git",

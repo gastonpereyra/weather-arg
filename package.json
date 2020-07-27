@@ -2,9 +2,9 @@
   "name": "weather-arg",
   "version": "1.0.0",
   "description": "A Package to consult the weather in Argentina",
-  "main": "lib/index.js",
+  "main": "lib/weather.js",
   "files": [
-    "lib/weather.js"
+    "lib/"
   ],
   "directories": {
     "test": "tests"

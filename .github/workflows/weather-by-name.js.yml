@@ -5,7 +5,7 @@ on:
     inputs:
       city:
         description: 'City'
-        default: 'Capital Federal'
+        default: '"Capital Federal"'
         required: true
 
 jobs:

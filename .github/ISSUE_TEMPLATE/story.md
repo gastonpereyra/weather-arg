@@ -1,7 +1,7 @@
 ---
 name: Story
 about: Story to organize development
-title: "[STORY]"
+title: "[Weather API] - Package -"
 labels: enhancement
 assignees: gastonpereyra
 
